@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WCCFinalChallenge">
-        <activity android:name=".wccfinalchallenge.Products"></activity>
-        <activity android:name=".wccfinalchallenge.MainActivity">
+        <activity android:name=".view.Products"></activity>
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
