@@ -1,11 +1,18 @@
 package br.com.desafio.wccfinalchallenge.entity
 
+import com.squareup.moshi.Json
+
 data class Product(
-        val id: Int,
-        val produto: String,
-        val descricao: String,
-        val preco: Double,
-        val desconto: Boolean,
-        val imagem: String
+    @Json(name= "desconto")
+    val desconto: Boolean,
+    @Json(name= "descricao")
+    val descricao: String,
+    @Json(name = "imagem")
+    val imagem: String,
+    @Json(name= "preco")
+    val preco: Double,
+    @Json(name = "produto")
+    val produto: String
 )
+
 

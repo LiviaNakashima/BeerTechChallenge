@@ -1,9 +1,9 @@
 package br.com.desafio.wccfinalchallenge.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import br.com.desafio.wccfinalchallenge.R
 
 class MainActivity : AppCompatActivity() {
@@ -12,10 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun loginButton(component: View) {
+    fun irProximaTela(component: View) {
 
-        val login = Intent(this, Products::class.java)
+        val telaLista = Intent(this, ProductActivity::class.java)
 
-        startActivity(login)
+        startActivity(telaLista)
     }
 }
+
