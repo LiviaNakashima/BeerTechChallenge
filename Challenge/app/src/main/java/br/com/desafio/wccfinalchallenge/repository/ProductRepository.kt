@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.lang.Exception
 
-class Repository {
+class ProductRepository {
     private val productListResponse = MutableLiveData<List<Product>>()
 
     val productsList: LiveData<List<Product>>
@@ -27,7 +27,7 @@ class Repository {
                 productListResponse.postValue(response)
             } catch (e: Exception){
                 withContext(Dispatchers.Main){
-                    productListResponse.postValue(null)
+                    productListResponse.postValue(listOf())
                 }
             }
         }

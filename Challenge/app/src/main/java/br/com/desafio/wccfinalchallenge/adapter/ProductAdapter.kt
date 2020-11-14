@@ -11,7 +11,7 @@ import br.com.desafio.wccfinalchallenge.R
 import br.com.desafio.wccfinalchallenge.entity.Product
 import com.bumptech.glide.Glide
 
-class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>() {
+class ProductAdapter: RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
     var data = listOf<Product>()
         set(value) {
             field = value

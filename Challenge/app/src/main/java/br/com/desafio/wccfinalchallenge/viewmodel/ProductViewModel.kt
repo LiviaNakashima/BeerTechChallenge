@@ -3,9 +3,9 @@ package br.com.desafio.wccfinalchallenge.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import br.com.desafio.wccfinalchallenge.entity.Product
-import br.com.desafio.wccfinalchallenge.repository.Repository
+import br.com.desafio.wccfinalchallenge.repository.ProductRepository
 
-class ViewModelProduct(private val repository: Repository): ViewModel() {
+class ProductViewModel(private val repository: ProductRepository): ViewModel() {
     val  productList: LiveData<List<Product>>
         get() = repository.productsList
 }

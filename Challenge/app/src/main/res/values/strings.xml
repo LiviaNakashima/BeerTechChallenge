@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">WCC Final Challenge</string>
+    <string name="app_name">BeerTech Challenge</string>
     <string name="txt_bt_login">Logar</string>
+    <string name="hint_login">Digite seu login</string>
+    <string name="hint_senha">Digite sua senha</string>
 </resources>

@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import br.com.desafio.wccfinalchallenge.databinding.ActivityProductsBinding
-import br.com.desafio.wccfinalchallenge.adapter.Adapter
-import br.com.desafio.wccfinalchallenge.databinding.ProductItemBinding
-import br.com.desafio.wccfinalchallenge.repository.Repository
-import br.com.desafio.wccfinalchallenge.viewmodel.ViewModelProduct
-import br.com.desafio.wccfinalchallenge.viewmodel.ViewModelFactory
+import br.com.desafio.wccfinalchallenge.adapter.ProductAdapter
+import br.com.desafio.wccfinalchallenge.repository.ProductRepository
+import br.com.desafio.wccfinalchallenge.viewmodel.ProductViewModel
+import br.com.desafio.wccfinalchallenge.viewmodel.ProductViewModelFactory
 
 class ProductActivity : AppCompatActivity() {
     lateinit var binding: ActivityProductsBinding
@@ -22,11 +21,11 @@ class ProductActivity : AppCompatActivity() {
 
         val recycleView = binding.recyclerView
 
-        val adapter = Adapter()
+        val adapter = ProductAdapter()
         recycleView.adapter = adapter
 
-        val viewModelFactory = ViewModelFactory(Repository())
-        val viewModel = ViewModelProvider(this, viewModelFactory).get(ViewModelProduct::class.java)
+        val viewModelFactory = ProductViewModelFactory(ProductRepository())
+        val viewModel = ViewModelProvider(this, viewModelFactory).get(ProductViewModel::class.java)
 
         val itemsList = viewModel.productList
         itemsList.observe(this, Observer { items ->
