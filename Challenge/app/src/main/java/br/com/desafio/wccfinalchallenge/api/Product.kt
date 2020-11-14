@@ -1,4 +1,4 @@
-package br.com.desafio.wccfinalchallenge.entity
+package br.com.desafio.wccfinalchallenge.api
 
 import com.squareup.moshi.Json
 

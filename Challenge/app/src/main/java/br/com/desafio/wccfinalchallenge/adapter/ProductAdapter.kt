@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.desafio.wccfinalchallenge.R
-import br.com.desafio.wccfinalchallenge.entity.Product
+import br.com.desafio.wccfinalchallenge.api.Product
 import com.bumptech.glide.Glide
 
 class ProductAdapter: RecyclerView.Adapter<ProductAdapter.ViewHolder>() {

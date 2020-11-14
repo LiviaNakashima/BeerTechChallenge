@@ -1,6 +1,5 @@
 package br.com.desafio.wccfinalchallenge.api
 
-import br.com.desafio.wccfinalchallenge.entity.Product
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Response

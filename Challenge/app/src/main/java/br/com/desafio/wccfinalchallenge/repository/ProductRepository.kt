@@ -2,7 +2,7 @@ package br.com.desafio.wccfinalchallenge.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import br.com.desafio.wccfinalchallenge.entity.Product
+import br.com.desafio.wccfinalchallenge.api.Product
 import br.com.desafio.wccfinalchallenge.api.ProductApi
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
